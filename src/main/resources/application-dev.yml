@@ -1,2 +1,19 @@
+spring:
+  application:
+    name: ShoppingTimeSlot-project
+  jmx:
+    default-domain: ShoppingTimeSlot-project
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    druid:
+      initial-size: 1
+      max-active: 3
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@//localhost:1521/orclpdb.fritz.box
+    username: testuser
+    password: test
+    driver-class-name: oracle.jdbc.OracleDriver
 server:
   port: 8082
